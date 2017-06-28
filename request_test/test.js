@@ -4,7 +4,7 @@
 
 const request = require('request');
 const md5 = require('./MD5').md5;
-const url = "http://127.0.0.1:3000/user/unBindProxy";
+const url = "http://192.168.10.46:3000/user/unBindProxy";
 let agent = 10001,
     reason = "system_opt",//"extract_desposit"
     msg = "unbind",
@@ -18,5 +18,11 @@ let options = {
 };
 
 request( options, (err, res, body) => {
-    console.log( "err=====", err, "----body======", body );
+
+    if( err ){
+        throw err;
+    }else {
+        console.log( "body============", body );
+    }
+
 } )
