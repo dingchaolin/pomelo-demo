@@ -13,3 +13,11 @@ var test = function( testObj ){
 test( tempObj );
 
 console.log( obj );
+
+let arrObj = [1,2,3,4];
+
+let temp = arrObj;
+
+temp[2] = 55555;
+
+console.log( arrObj )
