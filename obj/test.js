@@ -21,3 +21,11 @@ let temp = arrObj;
 temp[2] = 55555;
 
 console.log( arrObj )
+
+
+let time1  = +new Date( "2017-07-10"||"" );
+let date = new Date( );
+let time = date.getFullYear() + "-" + (date.getMonth() < 10 ? '0' + (date.getMonth()+1) : (date.getMonth()+1)) + "-" + (date.getDate() < 10 ? '0' + date.getDate() : date.getDate()) ;
+time = + new Date( time );
+
+console.log( time1, time )
