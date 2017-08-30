@@ -7,4 +7,22 @@ let arr2 = new Array( arr );
 arr1.push(4);
 arr2.push( 5 );
 
-console.log( arr );
+//console.log( arr );
+
+
+let a = {a:1};
+
+let b= a;
+b.a = 2;
+
+//console.log( a, b )
+
+let obj = {}
+//obj.a = ""
+
+if( obj.a ){
+    console.log("zhen")
+}else {
+    console.log("jia")
+}
+
